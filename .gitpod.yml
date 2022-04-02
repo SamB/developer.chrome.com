@@ -1,0 +1,11 @@
+# This file tells GitPod how to set things up for development on this repo.
+# See <https://www.gitpod.io/docs/config-gitpod-file>.
+
+# Ideally, prebuilds should be enabled for this project, preferably in
+# incremental mode so users don't have to wait for npm to download the same
+# packages again and again. See <https://www.gitpod.io/docs/prebuilds>.
+
+tasks:
+  # These should basically match README.md
+  - init: npm ci # This runs during prebuild (if enabled)
+    command: npm run dev # This runs when the workspace is opened.
